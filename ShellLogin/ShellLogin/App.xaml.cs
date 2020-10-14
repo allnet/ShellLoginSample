@@ -29,6 +29,7 @@ namespace ShellLogin
             Locator.CurrentMutable.Register(() => new LoadingViewModel());
             Locator.CurrentMutable.Register(() => new LoginViewModel());
             Locator.CurrentMutable.Register(() => new RegistrationViewModel());
+            //Locator.CurrentMutable.Register(() => new CatsPageViewModel());
         }
 
         protected override void OnStart()

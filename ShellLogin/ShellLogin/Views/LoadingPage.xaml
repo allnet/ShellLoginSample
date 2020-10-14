@@ -8,7 +8,7 @@
              x:Class="ShellLogin.Views.LoadingPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <ActivityIndicator Color="Accent"
+            <ActivityIndicator Color="Coral"
                                IsRunning="True"
                                IsVisible="True" />
             <Label Text="Loading ..." />

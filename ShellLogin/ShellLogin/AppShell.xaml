@@ -48,6 +48,10 @@
                   ContentTemplate="{DataTemplate local:LoginPage}">
     </ShellContent>
 
+     <ShellContent Route="cats"
+                  ContentTemplate="{DataTemplate local:CatsPage}">
+    </ShellContent>
+
     <!-- Main Page -->
     <FlyoutItem Route="main"
                 FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False">
@@ -56,6 +60,19 @@
                       ContentTemplate="{DataTemplate local:MainPage}"
                       Title="Home" />
     </FlyoutItem>
+
+       <FlyoutItem Route="main"
+                FlyoutDisplayOptions="AsMultipleItems" IsTabStop="True">
+        <ShellContent Route="cats"
+                      IsTabStop="True"
+                      ContentTemplate="{DataTemplate local:CatsPage}"
+                      Title="Cats Complex" />
+    </FlyoutItem>
+
     <MenuItem Text="Logout"
               Command="{Binding ExecuteLogout}" />
+       <MenuItem Text="Registration"
+              Command="{Binding ExecuteRegistration}" />
+    <MenuItem Text="Cat Shit"
+              Command="{Binding ExecuteCatShit}" />
 </Shell>

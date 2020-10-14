@@ -10,6 +10,7 @@ namespace ShellLogin.ViewModels
 {
     class LoginViewModel : BaseViewModel
     {
+        private readonly bool isLoginValid = true;
         private IRoutingService _navigationService;
 
         public LoginViewModel(IRoutingService navigationService = null)
@@ -27,7 +28,12 @@ namespace ShellLogin.ViewModels
         private void Login()
         {
             // This is where you would probably check the login and only if valid do the navigation...
-            _navigationService.NavigateTo("///main/home");
+
+            if (isLoginValid)
+            {
+                _navigationService.NavigateTo("///main/home");
+                //_navigationService.NavigateTo("///main/cats");
+            }
         }
 
         private void Register()

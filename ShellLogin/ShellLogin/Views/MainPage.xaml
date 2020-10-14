@@ -8,10 +8,10 @@
              Shell.TabBarIsVisible="False"
              x:Class="ShellLogin.Views.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.Forms Darryl!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
