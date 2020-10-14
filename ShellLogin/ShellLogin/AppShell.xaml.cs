@@ -17,17 +17,21 @@ namespace ShellLogin
             Routing.RegisterRoute("auth/login", typeof(LoginPage));
 
             Routing.RegisterRoute("main/cats", typeof(CatsPage));
+            Routing.RegisterRoute("main/about", typeof(About));
+
 
             BindingContext = this;
         }
 
         public ICommand ExecuteLogout => new Command(async () => await GoToAsync("auth/login"));
         public ICommand ExecuteRegistration => new Command(async () => await GoToAsync("auth/registration"));
+        public ICommand ExecuteAbout => new Command(async () => await GoToAsync("main/about"));
 
         public ICommand ExecuteCatShit => new Command( () =>
         {
             Console.WriteLine("What the fuck!");
-            GoToAsync("main/cats");
+            GoToAsync("main/cat");
+            Shell.Current.FlyoutIsPresented = false;   //close the menu //FLyoutBehaviour in XAML
         }
         );
 

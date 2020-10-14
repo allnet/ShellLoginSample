@@ -62,10 +62,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:data="clr-namespace:ShellLogin.Data"
-                          mc:Ignorable="d"
+             xmlns:vm="clr-namespace:ShellLogin.ViewModels"
              Title="Cats"
              Shell.TabBarIsVisible="False"
-             x:Class="ShellLogin.Views.CatsPage">
+             x:DataType="{x:Type vm:CatsPageViewModel}"
+             x:Class="ShellLogin.Views.CatsPage"
+                          mc:Ignorable="d">
     <ContentPage.Content>
             <StackLayout>
                 <Label Text="Welcome to Xamarin.Forms Darryl!"

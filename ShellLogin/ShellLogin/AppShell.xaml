@@ -75,4 +75,6 @@
               Command="{Binding ExecuteRegistration}" />
     <MenuItem Text="Cat Shit"
               Command="{Binding ExecuteCatShit}" />
+    <MenuItem Text="About" 
+              Command="{Binding ExecuteAbout}" />
 </Shell>

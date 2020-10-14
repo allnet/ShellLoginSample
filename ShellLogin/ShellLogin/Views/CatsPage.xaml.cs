@@ -21,7 +21,7 @@ namespace ShellLogin.Views
 
         public CatsPage()
         {
-           // InitializeComponent();
+           InitializeComponent();
         }
 
         async void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
